@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>M01-S03-Aula2</title>
+</head>
+
+<body class="texto-laranja">
+    <h1>Olá Mundo DEVinHouse</h1>
+    <p class="fundo-verde">Estrutura básica de um documento HTML 5. &#x1F913;</p>
+
+    <form action="post" method="post">
+        <label for="nomePessoa">Exemplo Post</label><br>
+        <input type="text" name="nomePessoa" id="nomePessoa" placeholder="Informe seu nome">
+        <button type="submit">Enviar</button><br>
+        <hr>
+        <label for="categoria">Exemplo Select</label><br>
+        <select name="categoria" id="categoria">
+            <option value="" disabled>Selecione</option>
+            <option value="salgado">Salgado</option>
+            <option value="doce">Doce</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <!-- action get exemplo para google -->
+    <form action="https://www.google.com/search" method="get">
+        <label for="termo">Buscar Google</label><br /> <!-- linkar o label com o input for do label = id do input -->
+        <input type="text" name="q" id="termo" placeholder="Informe um termo para pesquisa no Google">
+        <button type="submit">Enviar</button>
+    </form>
+    <br /><br />
+    <img src="../imagens/tux.png" alt="Tux mascote do Linux">
+    <h2 id="este-aqui">Aula 2 Semana 3</h2> <!-- Comentário em HTML - no mac usa o option + shift + a -->
+    <hr />
+
+    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+        Site Google
+    </a>
+    <div>
+        <ul>
+            <li id="item1">Item 1</li>
+            <li id="item2">Item 2</li>
+        </ul>
+        <ol>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>

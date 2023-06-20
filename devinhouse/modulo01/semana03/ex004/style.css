@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#fieldset_dados {
+    
+    
+    margin: 0 auto;
+    padding: 10px;
+    
+    border-radius: 10px;
+    background-color: rgb(105, 174, 208);
+    
+    
+  }

@@ -1,0 +1,15 @@
+
+
+h1 {
+    color: red;
+}
+.fundo-verde {
+    background-color: green;
+}
+.texto-laranja {
+    color: orange;
+    background-color: white;
+}
+#este-aqui {
+    color: blue;
+}
