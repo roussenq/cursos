@@ -36,20 +36,35 @@ body {
 }
 
 header,
+main,
+footer {
+    padding: 16px;
+}
+
+header,
 footer {
     background-color: #000080;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-nav > a{
+.logo-text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav>a {
     color: #fff;
     text-decoration: none;
-    padding: 0 1rem;
-    
-
 }
 
 main {
