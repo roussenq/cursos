@@ -2,64 +2,83 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaje-Tech - M1-S03-E06</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaje-Tech - M1-S03-E06</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="page-container"> <!-- adicionado no css como flex, possui 3 containers flex (header/main/footer) -->
-        <header>
-            <h1 class="logo-text">Viaje-Tech</h1>
-            <nav>
-                <a href="">Destinos</a>
-                <a href="">Pacotes</a>
-                <a href="">Sobre Nós</a>
-                <a href="">Contato</a>
-            </nav>
-        </header>
-        <main>
-            <ul id="cards-container">
-                <li>
-                    <img src="" alt="Imagem 1">
-                    <h3>Florianopolis</h3>
-                    <div class="cards-details">
-                        <p>Preço a partir de</p>
-                        <p>BTC 0,145242</p>
-                        <a href="">Visualizar &gt;&gt;</a>
-                    </div>
-                <li>
-                    <img src="" alt="Imagem 2">
-                    <h3>Curitiba</h3>
-                    <div class="cards-details">
-                        <p>Preço a partir de</p>
-                        <p>BTC 0,13876</p>
-                        <a href="">Visualizar &gt;&gt;</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="" alt="Imagem 3">
-                    <h3>Tatooine</h3>
-                    <div class="cards-details">
-                        <p>Preço a partir de</p>
-                        <p>BTC 2,6756</p>
-                        <a href="">Visualizar &gt;&gt;</a>
-                    </div>
-                </li>
-                
-            </ul>
-            <form action="">
-                <p>Form</p>
-            </form>
-        </main>
-        <footer>
-            <p class="logo-text">Viaje-Tech</p>
-            <p>©2023 Agência de turismo - Rua Tal, N 234, CEP 88000-000 - </p>
-            <!-- atalho do simbolo é alt-comand+shift+c -->
-        </footer>
-    </div>
+  <div id="page-container"> <!-- adicionado no css como flex, possui 3 containers flex (header/main/footer) -->
+    <header>
+      <h1 class="logo-text">Viaje-Tech</h1>
+      <nav>
+        <a href="">Destinos</a>
+        <a href="">Pacotes</a>
+        <a href="">Sobre Nós</a>
+        <a href="">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <ul id="cards-container">
+        <li>
+          <img src="" alt="Imagem 1">
+          <h3>Florianopolis</h3>
+          <div class="card-details">
+            <div class="price">
+              <h4>
+                <p>Preço a partir de</p>
+              </h4>
+              <p>BTC 0,145242</p>
+            </div>
+            <a href="">Visualizar &gt;&gt;</a>
+          </div>
+        <li>
+          <img src="" alt="Imagem 2">
+          <h3>Curitiba</h3>
+          <div class="card-details">
+            <div class="price">
+              <h4>
+                <p>Preço a partir de</p>
+              </h4>
+              <p>BTC 0,13876</p>
+            </div>
+            <a href="">Visualizar &gt;&gt;</a>
+          </div>
+        </li>
+        <li>
+          <img src="" alt="Imagem 3">
+          <h3>Tatooine</h3>
+          <div class="card-details">
+            <div class="price">
+              <h4>
+                <p>Preço a partir de</p>
+              </h4>
+              <p>BTC 2,6756</p>
+              </h4>
+            </div>
+            <a href="">Visualizar &gt;&gt;</a>
+          </div>
+        </li>
+
+      </ul>
+      <form action="">
+        <input type="text" name="origem" placeholder="Informe a Origem" />
+        <input type="text" name="destino" placeholder="Informe o Destino" />
+        <label for="id-data-ida">Ida</label>
+        <input type="date" name="data-ida" id="id-data-ida"   />
+        <label for="id-data-volta">Volta</label>
+        <input type="date" name="data-volta" id="id-data-volta" />
+        <button type="submit">Procurar</button>
+      </form>
+    </main>
+    <footer>
+      <p class="logo-text">Viaje-Tech</p>
+      <p>&copy; 2023 &middot; Agência de turismo &middot; Rua Tal, N 234, CEP 88000-000 &middot; Florianópolis - SC</p>
+      <!-- atalho do simbolo é alt-comand+shift+c -->
+    </footer>
+  </div>
 </body>
 
 </html>

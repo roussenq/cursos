@@ -119,14 +119,73 @@ main {
     font-size: 1.2rem;
     font-weight: nomal;
     font-style: italic;
-    color: #000080;
+    color: navy;
 }
 
-#cards-container>li>p {
-    font-size: 1rem;
-    text-align: justify;
+#cards-container>li>.card-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
 }
 
-footer {
-    text-align: center;
+#cards-container>li>.card-details>.price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#cards-container>li>.card-details>.price>h4 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+#cards-container>li>.card-details>.price>p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#cards-container>li>.card-details>a {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    min-width: 1046px;
+    max-width: calc(100% - 64px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: navy;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    border-radius: 8px;
+    border-color: gray;
+    border: 1px solid navy;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: navy;
+}
+
+form input[type="text"] {
+    flex-grow: 1;
+}
+
+form button[type="submit"] {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
