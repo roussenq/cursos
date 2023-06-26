@@ -1,0 +1,49 @@
+:root {
+    font-size: 20px;
+}
+
+/* pseudo elemeto raiz dos estilos CSS */
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, tahoma, verdana, sans-serif;
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px white solid;
+}
+
+#bloco {
+    margin: 30px;
+    border: 20px solid pink;
+    padding: 30px;
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(41, 128, 99);
+    /*background-image: url(../imagens/tux.png);*/
+    font-size: 20px;
+}
+
+#bloco p {
+    font-size: 2rem;
+}
+
+#bloco div {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: lower-roman;
+}
