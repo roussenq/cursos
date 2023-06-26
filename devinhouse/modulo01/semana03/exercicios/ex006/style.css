@@ -9,6 +9,7 @@ div,
 header,
 main,
 footer,
+form,
 p,
 span,
 h1,
@@ -91,6 +92,8 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 #cards-container>li {
@@ -100,6 +103,10 @@ main {
     flex-direction: column;
     border-radius: 16px;
     border: 1px solid #000080;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+
+
+
     /*
     border-width: 1px;
     border-color: #000080;
@@ -113,6 +120,7 @@ main {
     aspect-ratio: 4/3;
     display: block;
     background-color: #e8e8e8;
+    
 }
 
 #cards-container>li>h3 {
@@ -120,12 +128,14 @@ main {
     font-weight: nomal;
     font-style: italic;
     color: navy;
+
 }
 
 #cards-container>li>.card-details {
     display: flex;
     justify-content: space-between;
     gap: 8px;
+    
 }
 
 #cards-container>li>.card-details>.price {
@@ -156,13 +166,14 @@ main {
 }
 
 form {
-    min-width: 1046px;
+    width: 1046px;
     max-width: calc(100vw - 64px);
     display: flex;
     align-items: center;
     gap: 16px;
     color: navy;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 form input {
@@ -177,6 +188,10 @@ form input {
 
 form input[type="text"] {
     flex-grow: 1;
+}
+
+form input[type="date"] {
+    min-width: 128px;
 }
 
 form button[type="submit"] {
