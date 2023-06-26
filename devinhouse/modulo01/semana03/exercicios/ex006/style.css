@@ -204,3 +204,11 @@ form button[type="submit"] {
     justify-content: center;
     align-items: center;
 }
+
+/* EXEMPLO DE MEDIA QUERY
+
+ @media screen and (max-width: 800px) {
+    body {
+        background-color: pink;
+    }
+} */
