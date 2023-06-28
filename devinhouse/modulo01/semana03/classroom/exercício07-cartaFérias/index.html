@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário-Solicitação de Férias</title>
+  <style>
+    body {
+      background: rgb(70, 142, 236);
+      font: normal 15pt Arial;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      color: white;
+      text-align: center;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: 500px;
+      margin: auto;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 2px 0;
+      font-weight: bold;
+    }
+
+    input {
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid rgb(70, 142, 236);
+    }
+
+    input[type="date"] {
+      width: 120px;
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid rgb(70, 142, 236);
+    }
+
+    input[type="submit"] {
+      background: rgb(70, 142, 236);
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+    }
+    
+    input[type="reset"] {
+      background: rgb(70, 142, 236);
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+    }
+
+    button {
+      background: rgb(70, 142, 236);
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid rgb(70, 142, 236);
+    }
+
+
+    footer {
+      color: white;
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Carta de solicitação de férias</h1>
+  </header>
+  <section id="icarta">
+    <form id="iform">
+      <label for="inome">Nome do funcionário:</label>
+      <input type="text" name="nome" id="inome" placeholder="Informe seu nome" required minlength="5" maxlength="60"
+        autocomplete="on">
+   
+        <label for="idataInicio">Data de Início:</label>
+        <input type="date" name="dataInicio" id="idataInicio" required>
+        <label for="idataFim">Data de Fim:</label>
+        <input type="date" name="dataFim" id="idataFim" required>
+
+        <input type="submit" value="Gerar carta" onclick="gerarCarta()">
+        <input type="reset" value="Limpar">
+     
+    </form>
+  </section>
+  <footer>
+    <p>&copy; DEVinHouse-Zucchetti</p>
+  </footer>
+  <script>
+    //FUNÇÃO PARA GERAR A CARTA DE SOLICITAÇÃO DE FÉRIAS
+    //DAVID ROUSSENQ MARIA
+    //DATA: 26/06/2023
+    function gerarCarta() {
+      var data = new Date();
+      var nome = document.getElementById("inome").value;
+      var dataInicio = document.getElementById("idataInicio").value;
+      var dataFim = document.getElementById("idataFim").value;
+            
+      icarta.innerHTML = `Caro(a) responsável
+      <br>Gostaria de solicitar minhas férias:
+      <br>Nome do funcionário: <strong>${nome}</strong>
+      <br>Data de início: <strong>${dataInicio}</strong>
+      <br>Data de fim: <strong>${dataFim}</strong>
+      <br>Agradeço a atenção.
+      <br>Atenciosamente, <strong>${nome}</strong>
+      <br>Gerado em ${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()}
+      <br><br><button id="meu-botaovoltar">Gerar outra carta</button>`;
+
+      function voltarPagina() {
+        window.history.back();
+      }
+
+      document.getElementById("meu-botaovoltar").addEventListener("click", function() {
+        window.history.back();
+      });
+      
+    }
+  </script>
+</body>
+
+</html>
+<!-- 
+Desenvolva uma interface utilizando HTML e CSS para o algoritmo desenvolvido na semana 02. Você pode acessar o código do algoritmo em (https://github.com/DEVinHouse-Zucchetti/algoritmos/blob/main/cartaFerias.js  ).
+
+Lembre-se de que você tem total liberdade para escolher as cores, tamanhos e alinhamentos dos elementos na tela.
+
+Além disso, utilize JavaScript para manipular a página criada, permitindo a exibição e ocultação do conteúdo de forma interativa  -->
