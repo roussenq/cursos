@@ -1,0 +1,83 @@
+body {
+    background: white;
+    font: normal 15pt Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+#iform {
+    background: gray;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+}
+
+#iresultado {
+    background: white;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+#iresultado input {
+    background: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(105, 104, 104, 0.8);
+}
+
+#iresultado div .msg {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 142, 236);
+    
+}
+
+input[type="submit"] {
+    background: rgb(70, 142, 236);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 142, 236);
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    margin: 50px;
+    font-size: 12pt;
+    color: black;
+    text-align: center;
+    font-style: italic;
+}

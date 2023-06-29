@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frete.css">
+    <title id="teste">Cálculo do frete</title>
 </head>
+
 <body>
-  frete
+    <header>
+        <h1 id="h2">Cálculo de frete</h1>
+        <img src="../styles/frete.png" alt="logotipo caminhão">
+    </header>
+
+    <section id="page-container">
+        <div>
+            <form id="iform">
+                <input type="text" name="peso" id="ipeso" placeholder="Peso do produto">
+                <input type="text" name="trajeto" id="itrajeto" placeholder="Distância do trajeto">
+                <button type="submit" value="Calcular Frete" onclick="calcularFrete()">
+            </form>
+        </div>
+
+        <div id="iresultado">
+            <h1>Cálculo de frete</h1>
+            <img src="../styles/frete.png" alt="logotipo caminhão">
+
+            <div id="msg">Aqui</div>
+            
+            <input class="voltarHome" type="submit" value="Calcular Novamente" onclick="voltarHome()">
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2023 | Time Switch Case | DEVinHouse-Zucchetti</p>
+    </footer>
+    <script src="frete.js"></script>
 </body>
+
 </html>
 
 <!-- Desenvolva uma interface utilizando HTML e CSS para o algoritmo desenvolvido na semana 02. Você pode acessar o código do algoritmo em algoritmos/calculoFrete.js at main · DEVinHouse-Zucchetti/algoritmos .
